@@ -20,8 +20,8 @@ export default function Home(): JSX.Element {
         <div className="w-full flex h-screen flex-col  ">
           <Header changeLanguage={changeLanguage} />
 
-          <div className="w-full h-full mt-36 flex flex-col justify-center items-center">
-            <div className="flex sm:flex:col gap-6 mb-48 items-center ">
+          <div className="w-full h-full mt-36  px-4 flex flex-col justify-center items-center">
+            <div className="flex  gap-6 mb-48 items-center ">
               <div className={language ? "pt-5 lg:pt-14" : ""}>
                 {language ? (
                   <h1 className="text-3xl lg:text-6xl  ">Привет, я </h1>
@@ -35,12 +35,12 @@ export default function Home(): JSX.Element {
                 )}
                 {language ? (
                   <h3 className="text-xl lg:text-4xl">
-                    Студент, <br />
-                    начинающий веб разработчик
+                    Студент <br />
+                    Начинающий веб разработчик
                   </h3>
                 ) : (
                   <h3 className="text-xl lg:text-4xl">
-                    Student, beginner web developer
+                    Student, Beginner web developer
                   </h3>
                 )}
               </div>
