@@ -24,22 +24,22 @@ export default function Home(): JSX.Element {
             <div className="flex sm:flex:col gap-6 mb-48 items-center ">
               <div className={language ? "pt-5 lg:pt-14" : ""}>
                 {language ? (
-                  <h1 className="text-xl lg:text-6xl  ">Привет, я </h1>
+                  <h1 className="text-3xl lg:text-6xl  ">Привет, я </h1>
                 ) : (
-                  <h1 className="text-xl lg:text-6xl ">Hi I'm </h1>
+                  <h1 className="text-3xl lg:text-6xl ">Hi I'm </h1>
                 )}
                 {language ? (
-                  <h2 className="lg:text-4xl">Максим Кондратьев</h2>
+                  <h2 className="text-xl lg:text-4xl">Максим Кондратьев</h2>
                 ) : (
-                  <h2 className="lg:text-4xl">Maksim Kondratev</h2>
+                  <h2 className="text-xl lg:text-4xl">Maksim Kondratev</h2>
                 )}
                 {language ? (
-                  <h3 className="lg:text-4xl">
+                  <h3 className="text-xl lg:text-4xl">
                     Студент, <br />
                     начинающий веб разработчик
                   </h3>
                 ) : (
-                  <h3 className="lg:text-4xl">
+                  <h3 className="text-xl lg:text-4xl">
                     Student, beginner web developer
                   </h3>
                 )}
@@ -66,28 +66,28 @@ export default function Home(): JSX.Element {
                   Welcome to my portfolio site
                 </p>
               )}
-              <div className="text-justify mb-32  h-full px-4 md:w-3/6 lg:w-3/6">
+              <div className="text-justify mb-32  h-full px-4 w-4/6 lg:w-3/6">
                 {language ? (
                   <>
                     <p className="mb-2">
                       Я родился 21.10.2003. <br /> В 2019 году начал
                       интересоваться информатикой и решил поступать в техникум
-                      на программиста недалеко от родного города
+                      на программиста недалеко от родного города.
                     </p>
                     <p>
                       После того, как я понял, что тема программирования стала
-                      интересна мне, я начал прилагать собственные усилия для
-                      изучения различных направлений программирования в
-                      свободное время. Первый языком программирования, который я
-                      опробовал, был Python. На Python я сдавал различные
-                      проекты для учителей и сделал несколько моих личных
-                      проектов, таких как телеграмм-бот, во время разработке
-                      которого я понял, как парсить данные из сайтов и базовую
-                      работу с базами данных, пройдя пробную версию курса
-                      веб-разработчика от Яндекса, мною были освоены базовые
-                      навыки HTML и CSS и по сей день я улучшаю их. В данный
-                      момент я изучаю JavaScript и Typescript, а также React,
-                      Next.js, Express, Tailwind CSS, фреймворки Django
+                      мне интересна, я начал прилагать собственные усилия для
+                      изучения различных областей программирования в свободное
+                      время. Первым языком программирования, который я
+                      опробовал, был Python. Я использовал Python для выполнения
+                      различных проектов для преподавателей и сделал несколько
+                      личных проектов, таких как telegram-бот, с помощью
+                      которого я понял, как парсить данные с веб-сайтов, а
+                      так-же основы работы с реляционными базами данных. Пройдя
+                      пробную версию курса веб-разработчика от Яндекса и освоил
+                      базовые навыки HTML и CSS и продолжаю их совершенствовать.
+                      На данный момент я изучаю JavaScript и Typescript, а также
+                      фреймворки React, Next.js, Express, Tailwind CSS, Django.
                     </p>
                   </>
                 ) : (
@@ -110,7 +110,7 @@ export default function Home(): JSX.Element {
                       the basic skills of HTML and CSS and to this day I improve
                       them. At this moment I am learning JavaScript and
                       Typescript, as well as React, Next.js, Express, Tailwind
-                      CSS, Django frameworks
+                      CSS, Django frameworks.
                     </p>
                   </>
                 )}
