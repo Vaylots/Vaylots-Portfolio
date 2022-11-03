@@ -6,13 +6,6 @@ import { useEffect, useState } from "react";
 import { Ilinks } from "../../components/interfaces/Ilinks";
 import Header from "../../components/Header/";
 
-import vk from "./../assets/vk.svg";
-import discord from "./../assets/discord.svg";
-import steam from "./../assets/steam.svg";
-import githubWhite from "./../assets/github-white.svg";
-import githubBlack from "./../assets/github-black.svg";
-import telegram from "./../assets/telegram.svg";
-
 export default function Links(): JSX.Element {
   const [blackTheme, setBlackTheme] = useState<boolean>(true);
 
@@ -34,32 +27,32 @@ export default function Links(): JSX.Element {
     {
       name: "VK",
       url: "https://vk.com/vaylots",
-      imageWhite: vk,
-      imageBlack: vk,
+      imageWhite: "/vk.svg",
+      imageBlack: "/vk.svg",
     },
     {
       name: "Telegram",
       url: "https://t.me/Vaylots",
-      imageWhite: telegram,
-      imageBlack: telegram,
+      imageWhite: "/telegram.svg",
+      imageBlack: "/telegram.svg",
     },
     {
       name: "Discord",
       url: "https://discordapp.com/users/386504845672316929",
-      imageWhite: discord,
-      imageBlack: discord,
+      imageWhite: "/discord.svg",
+      imageBlack: "/discord.svg",
     },
     {
       name: "Steam",
       url: "https://steamcommunity.com/id/Vaylots/s",
-      imageWhite: steam,
-      imageBlack: steam,
+      imageWhite: "/steam.svg",
+      imageBlack: "/steam.svg",
     },
     {
       name: "Github",
       url: "https://github.com/Vaylots",
-      imageBlack: githubBlack,
-      imageWhite: githubWhite,
+      imageBlack: "/github-black.svg",
+      imageWhite: "/github-white.svg",
     },
   ];
   return (
@@ -89,12 +82,16 @@ export default function Links(): JSX.Element {
                         {!blackTheme ? (
                           <Image
                             className="w-8"
+                            width={512}
+                            height={512}
                             src={element.imageBlack}
                             alt={"image"}
                           />
                         ) : (
                           <Image
                             className="w-8"
+                            width={512}
+                            height={512}
                             src={element.imageWhite}
                             alt={"image"}
                           />
@@ -105,12 +102,16 @@ export default function Links(): JSX.Element {
                         {!blackTheme ? (
                           <Image
                             className="w-8"
+                            width={512}
+                            height={512}
                             src={element.imageBlack}
                             alt={"image"}
                           />
                         ) : (
                           <Image
                             className="w-8"
+                            width={512}
+                            height={512}
                             src={element.imageWhite}
                             alt={"image"}
                           />
@@ -126,12 +127,16 @@ export default function Links(): JSX.Element {
                         {!blackTheme ? (
                           <Image
                             className="w-8"
+                            width={512}
+                            height={512}
                             src={element.imageBlack}
                             alt={"image"}
                           />
                         ) : (
                           <Image
                             className="w-8"
+                            width={512}
+                            height={512}
                             src={element.imageWhite}
                             alt={"image"}
                           />
@@ -142,12 +147,16 @@ export default function Links(): JSX.Element {
                         {!blackTheme ? (
                           <Image
                             className="w-8"
+                            width={512}
+                            height={512}
                             src={element.imageBlack}
                             alt={"image"}
                           />
                         ) : (
                           <Image
                             className="w-8"
+                            width={512}
+                            height={512}
                             src={element.imageWhite}
                             alt={"image"}
                           />
