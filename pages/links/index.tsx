@@ -6,12 +6,12 @@ import { useEffect, useState } from "react";
 import { Ilinks } from "../../components/interfaces/Ilinks";
 import Header from "../../components/Header/";
 
-import vk from "../assets/vk.svg";
-import discord from "../assets/discord.svg";
-import steam from "../assets/steam.svg";
-import githubWhite from "../assets/github-white.svg";
-import githubBlack from "../assets/github-black.svg";
-import telegram from "../assets/telegram.svg";
+import vk from "./../assets/vk.svg";
+import discord from "./../assets/discord.svg";
+import steam from "./../assets/steam.svg";
+import githubWhite from "./../assets/github-white.svg";
+import githubBlack from "./../assets/github-black.svg";
+import telegram from "./../assets/telegram.svg";
 
 export default function Links(): JSX.Element {
   const [blackTheme, setBlackTheme] = useState<boolean>(true);

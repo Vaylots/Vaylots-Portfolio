@@ -2,14 +2,14 @@ import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
 import Header from "../components/Header/";
-import avatar from "./assets/realAvatar.jpg";
-import NextJsLogo from "./assets/nextjs.png";
-import ReactLogo from "./assets/React.png";
-import JsLogo from "./assets/javaScript.jpg";
-import TsLogo from "./assets/typescript.png";
-import PyLogo from "./assets/python-logo.jpeg";
-import TwLogo from "./assets/logo-Tailwind.jpg";
-import djangoLogo from "./assets/Python-Django.jpg";
+import avatar from "./../public/realAvatar.jpg";
+import NextJsLogo from "./../public/nextjs.png";
+import ReactLogo from "./../public/React.png";
+import JsLogo from "./../public/javaScript.jpg";
+import TsLogo from "./../public/typescript.png";
+import PyLogo from "./../public/python-logo.jpeg";
+import TwLogo from "./../public/logo-Tailwind.jpg";
+import djangoLogo from "./../public/Python-Django.jpg";
 
 export default function Home(): JSX.Element {
   const [language, setLanguage] = useState<boolean>();
