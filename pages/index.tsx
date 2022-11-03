@@ -3,14 +3,6 @@ import Image from "next/image";
 import { useState } from "react";
 import Header from "../components/Header/";
 import avatar from "./assets/realAvatar.jpg";
-import NextJsLogo from "./assets/nextjs.png";
-import ReactLogo from "./assets/React.png";
-import JsLogo from "./assets/javaScript.jpg";
-import TsLogo from "./assets/typescript.png";
-import PyLogo from "./assets/python-logo.jpeg";
-import TwLogo from "./assets/logo-Tailwind.jpg";
-import djangoLogo from "./assets/Python-Django.jpg";
-
 export default function Home(): JSX.Element {
   const [language, setLanguage] = useState<boolean>();
 
@@ -54,7 +46,9 @@ export default function Home(): JSX.Element {
               </div>
               <Image
                 className="w-24 lg:w-48 rounded-3xl "
-                src={avatar}
+                width={512}
+                height={512}
+                src={"/realAvatar.jpg"}
                 alt={"avatar"}
               />
             </div>
@@ -130,9 +124,15 @@ export default function Home(): JSX.Element {
           </h1>
           <ul className="flex flex-wrap justify-center gap-10 mt-10">
             <li>
-              <div className="card w-96 h-full bg-base-100 shadow-xl">
+              <div className="card w-80 lg:w-96 h-full bg-base-100 shadow-xl">
                 <figure>
-                  <Image className="h-56" src={NextJsLogo} alt={"Next.js"} />
+                  <Image
+                    className="h-56"
+                    height={256}
+                    width={512}
+                    src={"/nextjs.png"}
+                    alt={"Next.js"}
+                  />
                 </figure>
                 <div className="card-body">
                   <div className="card-title">Next.JS</div>
@@ -160,9 +160,15 @@ export default function Home(): JSX.Element {
               </div>
             </li>
             <li>
-              <div className="card w-96 h-full bg-base-100 shadow-xl">
+              <div className="card w-80 lg:w-96 h-full bg-base-100 shadow-xl">
                 <figure>
-                  <Image className="h-56" src={ReactLogo} alt={"React"} />
+                  <Image
+                    className="h-56"
+                    height={256}
+                    width={512}
+                    src={"/React.png"}
+                    alt={"React"}
+                  />
                 </figure>
                 <div className="card-body">
                   <div className="card-title">React</div>
@@ -188,9 +194,15 @@ export default function Home(): JSX.Element {
               </div>
             </li>
             <li>
-              <div className="card w-96 h-full bg-base-100 shadow-xl">
+              <div className="card w-80 lg:w-96 h-full bg-base-100 shadow-xl">
                 <figure>
-                  <Image className="h-56" src={JsLogo} alt={"Javascript"} />
+                  <Image
+                    className="h-56"
+                    src={"/javascript.jpg"}
+                    height={256}
+                    width={512}
+                    alt={"Javascript"}
+                  />
                 </figure>
                 <div className="card-body">
                   <div className="card-title">JavaScript</div>
@@ -220,9 +232,15 @@ export default function Home(): JSX.Element {
               </div>
             </li>
             <li>
-              <div className="card w-96 h-full   bg-base-100 shadow-xl">
+              <div className="card w-80 lg:w-96 h-full   bg-base-100 shadow-xl">
                 <figure>
-                  <Image className="h-56" src={TsLogo} alt={"TypeScript"} />
+                  <Image
+                    className="h-56"
+                    src={"/typescript.png"}
+                    height={256}
+                    width={512}
+                    alt={"TypeScript"}
+                  />
                 </figure>
                 <div className="card-body">
                   <div className="card-title">Typescript</div>
@@ -256,9 +274,15 @@ export default function Home(): JSX.Element {
               </div>
             </li>
             <li>
-              <div className="card w-96 h-full   bg-base-100 shadow-xl">
+              <div className="card w-80 lg:w-96 h-full   bg-base-100 shadow-xl">
                 <figure>
-                  <Image className="h-56" src={PyLogo} alt={"Python"} />
+                  <Image
+                    className="h-56"
+                    height={256}
+                    width={512}
+                    src={"/python-logo.jpeg"}
+                    alt={"Python"}
+                  />
                 </figure>
                 <div className="card-body">
                   <div className="card-title">Python</div>
@@ -289,9 +313,15 @@ export default function Home(): JSX.Element {
               </div>
             </li>
             <li>
-              <div className="card w-96 h-full   bg-base-100 shadow-xl">
+              <div className="card w-80 lg:w-96 h-full   bg-base-100 shadow-xl">
                 <figure>
-                  <Image className="h-56" src={TwLogo} alt={"Tailwind"} />
+                  <Image
+                    className="h-56"
+                    height={256}
+                    width={512}
+                    src={"/logo-Tailwind.jpg"}
+                    alt={"Tailwind"}
+                  />
                 </figure>
                 <div className="card-body">
                   <div className="card-title">Tailwind CSS</div>
@@ -323,9 +353,15 @@ export default function Home(): JSX.Element {
               </div>
             </li>
             <li>
-              <div className="card w-96 h-full   bg-base-100 shadow-xl">
+              <div className="card w-80 lg:w-96 h-full   bg-base-100 shadow-xl">
                 <figure>
-                  <Image className="h-56" src={djangoLogo} alt={"Django"} />
+                  <Image
+                    className="h-56"
+                    height={256}
+                    width={512}
+                    src={"/Python-Django.jpg"}
+                    alt={"Django"}
+                  />
                 </figure>
                 <div className="card-body">
                   <div className="card-title">Django</div>
