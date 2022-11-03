@@ -66,7 +66,7 @@ export default function Home(): JSX.Element {
                   Welcome to my portfolio site
                 </p>
               )}
-              <div className="text-justify mb-32  h-full px-4 w-4/6 lg:w-3/6">
+              <div className="text-justify mb-32  h-full px-4 w-full lg:w-3/6">
                 {language ? (
                   <>
                     <p className="mb-2">
