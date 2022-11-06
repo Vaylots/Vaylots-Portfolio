@@ -1,6 +1,6 @@
 export interface Ilinks {
   name: string;
   url: string;
-  imageWhite: any;
-  imageBlack: any;
+  imageWhite: string;
+  imageBlack: string;
 }

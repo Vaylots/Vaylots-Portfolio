@@ -9,15 +9,15 @@ export default function Header({
   changeLanguage,
   changeIconTheme,
 }: IHeader): JSX.Element {
-  const [translateColor, setTranslateColor] = useState<string>("white");
+  const [imageColor, setImageColor] = useState<string>("white");
   useEffect(() => {
     const themeSessionStorage: string | null =
       window.sessionStorage.getItem("data-theme");
 
     if (themeSessionStorage == "night") {
-      setTranslateColor("white");
+      setImageColor("white");
     } else if (themeSessionStorage == "light") {
-      setTranslateColor("black");
+      setImageColor("black");
     }
     setStandartSessionTheme();
   }, []);
@@ -33,10 +33,10 @@ export default function Header({
       window.sessionStorage.setItem("data-theme", "night");
     }
     if (themeSessionStorage == "night") {
-      setTranslateColor("white");
+      setImageColor("white");
       themeCheckBox.checked = false;
     } else if (themeSessionStorage == "light") {
-      setTranslateColor("black");
+      setImageColor("black");
       themeCheckBox.checked = true;
     }
   }
@@ -48,9 +48,9 @@ export default function Header({
     if (themeSessionStorage == "light") {
       html?.setAttribute("data-theme", "night");
       window.sessionStorage.setItem("data-theme", "night");
-      setTranslateColor("white");
+      setImageColor("white");
     } else if (themeSessionStorage == "night") {
-      setTranslateColor("black");
+      setImageColor("black");
       html?.setAttribute("data-theme", "light");
       window.sessionStorage.setItem("data-theme", "light");
     }
@@ -81,7 +81,7 @@ export default function Header({
           </div>
         </div>
         <div className="px-3 flex gap-4">
-          {translateColor == "white" ? (
+          {imageColor == "white" ? (
             <Image
               onClick={() => {
                 if (!changeLanguage) {
@@ -108,6 +108,11 @@ export default function Header({
               alt={"translate"}
             />
           )}
+          {imageColor == "white" ? (
+            <Image src={"/moon-white.svg"} alt={"sun"} width={24} height={24} />
+          ) : (
+            <Image src={"/moon-black.svg"} alt={"sun"} width={24} height={24} />
+          )}
           <input
             id="theme-changer-checkbox"
             type="checkbox"
@@ -116,6 +121,11 @@ export default function Header({
             }}
             className="toggle "
           />
+          {imageColor == "white" ? (
+            <Image src={"/sun-white.svg"} alt={"sun"} width={24} height={24} />
+          ) : (
+            <Image src={"/sun-black.svg"} alt={"sun"} width={24} height={24} />
+          )}
         </div>
       </div>
     </div>

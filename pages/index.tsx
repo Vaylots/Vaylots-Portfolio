@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
 import Header from "../components/Header/";
-import avatar from "./assets/realAvatar.jpg";
 export default function Home(): JSX.Element {
   const [language, setLanguage] = useState<boolean>();
 
